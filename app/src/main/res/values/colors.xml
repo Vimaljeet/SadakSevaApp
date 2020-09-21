@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#0069C0</color>
+    <color name="colorAccent">#F44336</color>
+
+<color name="black">#000000</color>
+    <color name="whiteTransparentHalf">#80ffffff</color>
+    <color name="likeBtnAccent">#F44336</color>
+    <color name="white">#FFFFFF</color>
+    <color name="TransparentWhite">#CCCCCC</color>
+    <color name="White">#FFFFFF</color>
+    <color name="loginPageBackgroundColor">#FF303030</color>
+    <color name="productGridBackgroundColor">#FFFFFF</color>
+<color name="whiite">#ffffff</color>
+    <color name="background_progress_bar">#BDBDBD</color>
+    <color name="background_color_num_progress_bar">#808080</color>
+    <color name="foreground_color_num_progress_bar">#eeeeee</color>
+    <color name="lightgrey">#f0eeee</color>
+    <color name="blue">#242CCC</color>
+</resources>

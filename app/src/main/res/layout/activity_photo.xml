@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photo_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhotoActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Appbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/White" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="three"
+        android:layout_marginTop="@dimen/margin_progress_bar"
+        android:layout_marginBottom="@dimen/margin_progress_bar"
+        app:spb_stateBackgroundColor="@color/background_progress_bar"
+        app:spb_stateForegroundColor="@color/colorPrimaryDark"
+        app:spb_stateNumberBackgroundColor="@color/background_color_num_progress_bar"
+        app:spb_stateNumberForegroundColor="@color/foreground_color_num_progress_bar"
+        app:spb_currentStateDescriptionColor="@color/colorPrimaryDark"
+        app:spb_stateDescriptionColor="@color/background_color_num_progress_bar"
+        android:scrollbarSize="@dimen/progress_bar_scrollbarsize"
+        app:spb_stateSize="@dimen/progress_bar_statesize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/camera_photo"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="@dimen/margin_camera_icon"
+                android:layout_marginTop="@dimen/margin_camera_icon"
+                android:layout_marginRight="@dimen/margin_camera_icon"
+                android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/camera_photo_text"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/add_photo"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_click_photo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/add_photo"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="@dimen/margin_camera_icon"
+                    android:layout_marginTop="@dimen/margin_camera_icon"
+                    android:layout_marginRight="@dimen/margin_camera_icon"
+                    android:src="@drawable/ic_photo_black_24dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/add_photo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/add_photo_gallery"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_click_photo" />
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="271dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hieght_nxt_button"
+                android:layout_margin="@dimen/margin_nxt_button"
+                android:background="@color/colorPrimaryDark"
+                android:text="Next"
+                android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
